@@ -1,0 +1,48 @@
+include example-code
+
+mixin patents(list)
+	.patents__row
+		each item in list
+			.patents__wrapper(class= item.modify && "patents__wrapper--" + item.modify)
+				.patents__item
+					.patents__item-icon(class = "patents__item-icon--" + item.icon)
+					.patents__item-title= item.title
+					.patents__item-text= item.text
+					a.patents__item-button(href= item.link) learn more
+
+
+
+
+mixin rating(rating)
+	.rating-star(class= "rating-star--" + rating)
+		-for(var i= 0; i<5; i++)
+			span.icon.icon-star
+
+mixin accordion(array)
+	.container__accordion
+		each item in array
+			.accordion__element
+				.accordion__title
+					h3.question= item.question
+				.accordion__cont
+					p.answer= item.answer
+
+mixin pagination(active_page)
+	.pagination
+		.pagination__arrow.pagination__arrow--prev
+		.pagination__list
+			-for(var i=0; i<99; i++)
+			if (i == active_page - 4)
+				.pagination__item.pagination__item--prev: a(href='#') ...
+			if (i >= active_page - 3 && i < active_page)
+				.pagination__item.pagination__item--prev: a(href='#')= i+1
+			else if (active_page == i)
+				.pagination__item.active: a(href='#')= i+1
+			else if (i > active_page && i <= active_page + 3)
+				.pagination__item.pagination__item--next: a(href='#')= i+1
+			else if (i == active_page + 4)
+				.pagination__item.pagination__item--prev: a(href='#') ...
+			else
+				.pagination__item: a(href='#')= i+1
+		.pagination__arrow.pagination__arrow--next
+

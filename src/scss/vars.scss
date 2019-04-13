@@ -1,0 +1,66 @@
+
+$full_width: 100%;
+$width_column12: $full_width / 12;
+$width_column10: $full_width / 10;
+
+$rem: 1rem / 16;
+$padding_container: 20*$rem;
+$padding: 10*$rem;
+
+$pathImages: "../images/";
+
+$extra_mobile_width: 500px;
+$extra_mobile_media: max-width 500px;
+
+$mobile_width: 767px;
+$mobile_media: max-width 767px;
+
+$tablet_min_width: 768px;
+$tablet_min_media: min-width 768px;
+
+$tablet_max_width: 1279px;
+$tablet_max_media: max-width 1279px;
+
+$desktop_width: 1280px;
+$desktop_media: min-width 1280px;
+
+$extra_desktop_width: 1920px;
+$extra_desktop_media: min-width 1920px;
+
+// colors
+$white: #ffffff;
+$black: #0E1420;
+$yellow: #FFE195;
+$main_bg: #656565;
+$block_bg: rgba(27, 49, 75, 0.75);
+
+$button_def: #2D3A52;
+$button_hover: $yellow;
+$element_active: $yellow;
+
+$text_button: rgba(255, 255, 255, 0.4);
+$text_def: rgba(255, 255, 255, 0.8);
+$text_active: $white;
+
+$menu_bg: rgba(1, 23, 45, 0.95);
+//шрифты
+%text_header_menu-item{
+  font-family: IBM Plex Sans, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: normal;
+
+  color: #FFFFFF;
+}
+%textButtonInHeader{
+  font-family: IBM Plex Sans, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: normal;
+  text-align: center;
+
+  color:white;
+}
+
