@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <!--mixin header(page)
 header.header(class={'header--main': page === 'index'})
-	.container
+    .container
 
 -->
 <!--USED MIXINS-->
+<!--Шапка для desktop-->
 <!--миксин добавляет header-->
 <!--меню для header-->
+<!--Шапка для Device-->
+<!--миксин добавляет header для девайсов-->
+<!--меню для мобильного header-->
 <html lang="ru">
   <head>
     <title>Interpid Bodyworks</title>
@@ -28,8 +32,22 @@ header.header(class={'header--main': page === 'index'})
         <li class="header__menu-item"><a href="careers">Careers</a></li>
         <li class="header__menu-item"><a href="#">303-457-2040</a></li>
       </div>
-      <div class="button"><span class="button__burger"></span><span class="button__text">Contact Us</span></div>
+      <div class="button"><span class="button__text">Contact Us</span></div>
     </header>
+    <header class="header--device">
+      <div class="logo--device"></div>
+      <div class="button--device"><span class="button__burger"></span></div>
+    </header>
+    <div class="header__menu--device">
+      <li class="header__menu--device-item"><a href="who-we-are">Who We Are</a></li>
+      <li class="header__menu--device-item"><a href="what-we-do">What We Do</a></li>
+      <li class="header__menu--device-item"><a href="price">Price</a></li>
+      <li class="header__menu--device-item"><a href="gift-certificates">Gift Certificates</a></li>
+      <li class="header__menu--device-item"><a href="faq">FAQ</a></li>
+      <li class="header__menu--device-item"><a href="contact">Contact</a></li>
+      <li class="header__menu--device-item"><a href="careers">Careers</a></li>
+      <li class="header__menu--device-item"><a href="#">303-457-2040</a></li>
+    </div>
     <footer class="footer"></footer>
   </body>
 </html>
