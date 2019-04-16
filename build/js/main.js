@@ -311,9 +311,3 @@ for (var i = 0; i < title.length; i++) {
         }
     })
 };
-
-//function classButton() {
-//};
-document.querySelector('.button').onclick = function () {
-    document.querySelector('.button').classList.add('.button--active');
-};

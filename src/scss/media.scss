@@ -20,6 +20,7 @@
       height: 18px;
       background:none;
       position:relative;
+      cursor: pointer;
       .button__burger{
         position:absolute;
         width: 24px;
@@ -42,22 +43,49 @@
           background: white;
           bottom:6px;
         }
+        &,
+        &:before,
+        &:after{
+          transform-origin: center;
+          transition: all .5s ease;
+        }
+      }
+    }
+    .button--device-active{
+      //background: red;
+      .button__burger--active{
+        width: 0;
+        height: 0;
+        &:before{
+          transform: rotate(45deg) translate(-5px, -4px);
+        }
+        &:after{
+          transform: rotate(-45deg) translate(-6px, 4px);
+        }
       }
     }
   }
+  //мобильное меню
   .header__menu--device{
     display:block;
     position:absolute;
     background: #2D59B5;
-    right:0;
+    right:-200px;
+    transition:all .5s ease-in;
     &-item{
       display:block;
     }
   }
-  //скрытие десктопное версии
+  .header__menu--device-active{
+    position:absolute;
+    right:0;
+  }
+//скрытие десктопной версии
   .header{
     display:none;
   }
+
+
 }
 
 
