@@ -4,11 +4,13 @@ body{
     overflow:hidden;
 }
 .header{
-    position: relative;
+    position: absolute;
+    top:0;
+    left:0;
     display:flex;
     width: 100%;
     height: 120px;
-    z-index: 0;
+    z-index: 1;
     background: #4F1790;
     justify-content: center;
     align-items: center;
@@ -55,4 +57,102 @@ body{
 }
 .header__menu--device{
   display: none;
+}
+//футер
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  min-height:300px;
+  .footer__topBlock {
+    position: relative;
+    width: 100%;
+    min-height: 200px;
+    background: #2E3440;
+    .topBlock__wrapper{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      transform: translate(0, 30%);
+      margin-left: 5%;
+      margin-right: 5%;
+      .navigation__footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .footer__menu {
+          display: flex;
+          max-width: 836px;
+          margin-bottom: 40px;
+          &--item {
+            white-space: nowrap;
+            margin-right: 40px;
+            display: block;
+            color: white;
+            &:last-child {
+              margin-right: 0;
+            }
+          }
+        }
+        .socialMedia {
+          display: flex;
+          margin-top: -50px;
+          .circle__socialMedia {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30px;
+            height: 30px;
+            border-radius: 100px;
+            background: white;
+            margin-right: 10px;
+            &:last-child {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+      .topBlock__bottom {
+        display: flex;
+        .wrapper__left {
+          display: flex;
+          flex-direction: column;
+          margin-right: 40px;
+          .left__text--top {
+            margin-bottom: 20px;
+          }
+        }
+        .wrapper__right {
+          display: flex;
+          flex-direction: column;
+          .right__text--top {
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+  .footer__bottomBlock {
+    position:relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    min-height: 100px;
+    background: #292D35;
+    .bottomBlock__leftSide {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+    .bottomBlock__text {
+      color: white;
+      &:nth-child(1) {
+        margin-right: 40px;
+      }
+      &:nth-child(2) {
+        margin-right: 10px;
+      }
+    }
+  }
 }

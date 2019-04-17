@@ -4,6 +4,11 @@ header.header(class={'header--main': page === 'index'})
     .container
 
 -->
+<!--mixin footer()
+footer.footer
+
+
+-->
 <!--USED MIXINS-->
 <!--Шапка для desktop-->
 <!--миксин добавляет header-->
@@ -11,6 +16,9 @@ header.header(class={'header--main': page === 'index'})
 <!--Шапка для Device-->
 <!--миксин добавляет header для девайсов-->
 <!--меню для мобильного header-->
+<!--footer для desktop-->
+<!--добавляет рэйтинг в футер-->
+<!--миксин меню для футера-->
 <html lang="ru">
   <head>
     <title>Interpid Bodyworks</title>
@@ -48,7 +56,39 @@ header.header(class={'header--main': page === 'index'})
       <li class="header__menu--device-item"><a href="careers">Careers</a></li>
       <li class="header__menu--device-item"><a href="#">303-457-2040</a></li>
     </div>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="footer__topBlock">
+        <div class="topBlock__wrapper">
+          <div class="navigation__footer">
+            <div class="footer__menu">
+              <li class="footer__menu--item"><a href="who-we-are">Who We Are</a></li>
+              <li class="footer__menu--item"><a href="what-we-do">What We Do</a></li>
+              <li class="footer__menu--item"><a href="price">Price</a></li>
+              <li class="footer__menu--item"><a href="gift-certificates">Gift Certificates</a></li>
+              <li class="footer__menu--item"><a href="faq">FAQ</a></li>
+              <li class="footer__menu--item"><a href="contact">Contact</a></li>
+              <li class="footer__menu--item"><a href="careers">Careers</a></li>
+              <li class="footer__menu--item"><a href="#">303-457-2040</a></li>
+            </div>
+            <div class="socialMedia">
+              <div class="circle__socialMedia"><img class="socialIcon" src="./images/footer/yelp_color.svg"></div>
+              <div class="circle__socialMedia"><img class="socialIcon" src="./images/footer/G+.svg"></div>
+              <div class="circle__socialMedia"><img class="socialIcon" src="./images/footer/f.svg"></div>
+            </div>
+          </div>
+          <div class="topBlock__bottom">
+            <div class="wrapper__left"><span class="left__text--top">Intrepid Bodyworks, 10313 Washington St. Thornton, CO 80229</span><span class="left__text--bottom">Monday — Sunday 9am — 8pm (Closed Tuesdays)</span></div>
+            <div class="wrapper__right"><span class="right__text--top">303-457-2040</span><span class="right__text--bottom">IntrepidBodyworks@gmail.com</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottomBlock">
+        <div class="bottomBlock__leftSide"><span class="bottomBlock__text">Intrepid Bodyworks © 2018</span><span class="bottomBlock__text">Company rating</span>
+          <div class="rating"><img src="./images/footer/Star.svg"><img src="./images/footer/Star.svg"><img src="./images/footer/Star.svg"><img src="./images/footer/Star.svg"><img src="./images/footer/Star.svg">
+          </div>
+        </div><span class="bottomBlock__text">Web Design — Direct Line Development</span>
+      </div>
+    </footer>
     <script src="./js/used_scripts.js"></script>
   </body>
 </html>

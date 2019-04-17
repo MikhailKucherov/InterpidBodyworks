@@ -28,7 +28,7 @@ mixin menu2(menu, page, parent_class)
     header.header(class={'header--main': page === 'index'})
         .container
 
-mixin footer()
+//mixin footer()
     footer.footer
 
 
@@ -66,4 +66,45 @@ mixin menu-header--device(menu)
     .header__menu--device
         each item in menu
             li(class= 'header__menu--device-item')
+                a(href= item.url)= item.title
+
+//footer для desktop
+mixin footer()
+    footer.footer
+        .footer__topBlock
+            .topBlock__wrapper
+                .navigation__footer
+                    +menu-footer(menu)
+                    .socialMedia
+                        .circle__socialMedia
+                            img.socialIcon(src='./images/footer/yelp_color.svg')
+                        .circle__socialMedia
+                            img.socialIcon(src='./images/footer/G+.svg')
+                        .circle__socialMedia
+                            img.socialIcon(src='./images/footer/f.svg')
+                .topBlock__bottom
+                    .wrapper__left
+                        span.left__text--top Intrepid Bodyworks, 10313 Washington St. Thornton, CO 80229
+                        span.left__text--bottom Monday — Sunday 9am — 8pm (Closed Tuesdays)
+                    .wrapper__right
+                        span.right__text--top 303-457-2040
+                        span.right__text--bottom IntrepidBodyworks@gmail.com
+        .footer__bottomBlock
+            .bottomBlock__leftSide
+                span.bottomBlock__text Intrepid Bodyworks © 2018
+                span.bottomBlock__text Company rating
+                +ratingStars()
+            span.bottomBlock__text Web Design — Direct Line Development
+
+//добавляет рэйтинг в футер
+mixin ratingStars()
+    .rating
+        -for(var i=0; i<5; i++)
+            img(src='./images/footer/Star.svg')
+
+//миксин меню для футера
+mixin menu-footer(menu)
+    .footer__menu
+        each item in menu
+            li(class= 'footer__menu--item')
                 a(href= item.url)= item.title
