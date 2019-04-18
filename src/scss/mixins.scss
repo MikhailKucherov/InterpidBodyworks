@@ -230,3 +230,33 @@
   color: rgba(255, 255, 255, 0.8);
 
 }
+
+//шрифт меню футера
+%footerMenuFont{
+  font-family: IBM Plex Sans, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: normal;
+  color: #FFFFFF;
+}
+
+//шрифт контактов в футере
+%footerContactsFont{
+  font-family: IBM Plex Sans, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: normal;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+//шрифт нижнего блока футера
+%footerBottomBlockFont{
+  font-family: IBM Plex Sans, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: normal;
+  color: #FFFFFF;
+}
