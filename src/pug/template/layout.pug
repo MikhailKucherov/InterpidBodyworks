@@ -16,10 +16,12 @@ html(lang="ru")
 
 	body
 		block var
-		block content
+
 		+header(page)
 		+header--device(page)
 		+menu-header--device(menu)
+
+		block content
 
 		+footer()
 		script(src='./js/used_scripts.js')

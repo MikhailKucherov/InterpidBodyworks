@@ -1,10 +1,10 @@
 @import 'breakpoint';
 @import 'mixins';
 body{
-    overflow:hidden;
+  overflow-x: hidden;
 }
 .header{
-    position: absolute;
+    position: relative;
     top:0;
     left:0;
     display:flex;
@@ -58,9 +58,17 @@ body{
 .header__menu--device{
   display: none;
 }
+
+.container{
+  position:relative;
+  background: yellow;
+  width: 100%;
+  height: 1500px;
+}
+
 //футер
 .footer {
-  position: absolute;
+  position: relative;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -108,10 +116,7 @@ body{
       }
       &--contacts{
         display: flex;
-        //justify-content: space-between;
-        //width: 621px;
         .topBlock__text{
-          white-space: nowrap;
           @extend %footerContactsFont;
           &:first-child{
             margin-bottom: 20px;
