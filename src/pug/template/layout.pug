@@ -20,8 +20,9 @@ html(lang="ru")
 		+header(page)
 		+header--device(page)
 		+menu-header--device(menu)
-
 		block content
+			+header-page(page, headerPageArray)
+
 
 		+footer()
 		script(src='./js/used_scripts.js')

@@ -63,4 +63,53 @@ $menu_bg: rgba(1, 23, 45, 0.95);
 
   color:white;
 }
+%text_header_menu-item--active{
+  font-family: IBM Plex Sans, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: normal;
 
+  color: #FFFFFF;
+
+  opacity: 0.6;
+}
+%textBreadCrumbs{
+  font-family: IBM Plex Sans, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: normal;
+
+  color: #FFFFFF;
+
+  opacity: 0.5;
+}
+%textHeadline{
+  font-family: IBM Plex Sans, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: normal;
+
+  color: #FFFFFF;
+}
+%textInHeaderPage{
+  font-family: IBM Plex Sans,sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 29px;
+
+  color: #FFFFFF;
+}
+%textButton{
+  font-family: IBM Plex Sans,sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: normal;
+  text-align: center;
+
+  color: #FFFFFF;
+}

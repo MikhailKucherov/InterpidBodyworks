@@ -1,2 +1,21 @@
+mixin header-page(page, headerPageArray)
+    section.topSection(class='topSection--'+ page)
+        .contentContainer(class='contentContainer--'+ page)
+            if(page == 'index')
+                .breadCrumbs--index
+                h1.headline--index= headerPageArray[1]
+            else
+                span.breadCrumbs= headerPageArray[0]
+                h1.headline= headerPageArray[1]
+            p.textInHeaderPage= headerPageArray[2]
+            if(!(page == 'who-we-are' || page == 'faq'))
+                .btn
+                    span.textBtn= headerPageArray[3]
+            if(page == 'index')
+                .arrow
 
-
+mixin testimonials
+    .testimonials__container
+        h1.testimonials__headline
+        .testimonials__feedback
+            //TODO:доделать миксин отзывов
