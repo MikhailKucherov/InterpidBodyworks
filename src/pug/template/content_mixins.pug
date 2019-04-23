@@ -12,10 +12,22 @@ mixin header-page(page, headerPageArray)
                 .btn
                     span.textBtn= headerPageArray[3]
             if(page == 'index')
-                .arrow
+                a(href='#bottom')
+                    .arrow
 
 mixin testimonials
     .testimonials__container
         h1.testimonials__headline
         .testimonials__feedback
             //TODO:доделать миксин отзывов
+
+mixin contactUsTodey
+    .container__contact
+        a(name='bottom')
+        .bigArrow
+        .contact__content
+            h2.contact__headline Contact Us Today
+            span.contact__text We can address rehabilitation issues, structural problems, injuries, headaches and more. Contact Us Today and allow us to assess your current situation.
+            h3.contact__phone 303-457-2040
+            .contact__btn
+                span.contact__btn-text I want to relieve my pain
