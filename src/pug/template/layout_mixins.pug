@@ -37,7 +37,8 @@ mixin menu2(menu, page, parent_class)
 //миксин добавляет header
 mixin header(page)
     header.header(class={'header--contact': page === 'contact'})
-        .logo
+        a(href='index.html')
+            .logo
         +menu-header(menu, page)
         .button
             span.button__text Contact Us
@@ -48,26 +49,28 @@ mixin menu-header(menu, page)
         each item in menu
             if (page == item.url)
                 li.header__menu-item(class= 'header__menu-item--active')
-                    a(href= item.url)= item.title
+                    a(href= item.url + '.html')= item.title
             else
                 li(class= 'header__menu-item')
-                    a(href= item.url)= item.title
+                    a(href= item.url + '.html')= item.title
 
 //Шапка для Device
 //миксин добавляет header для девайсов
 mixin header--device(page)
     header.header--device(class={'header--contacts': page === 'contacts'})
-        .logo--device
+        a(href='index.html')
+            .logo--device
         .button--device
             span.button__burger
 
 //меню для мобильного header
 mixin menu-header--device(menu)
     .header__menu--device
-        each item, key in menu
-            if (menu.length-1!== key)
-                li(class= 'header__menu--device-item')
-                    a(href= item.url)= item.title
+        .header__menu--containerElements
+            each item, key in menu
+                if (menu.length-1!== key)
+                    li(class= 'header__menu--device-item')
+                        a(href= item.url + '.html')= item.title
 
 //footer для desktop
 mixin footer()
@@ -118,6 +121,3 @@ mixin menu-footer(menu)
             else
                 li(class= 'footer__menu--item')
                     a(href= 'contact_us') Contact Us
-
-//миксин добавляет заголовок страницы
-    mixin header-page

@@ -288,6 +288,7 @@ body{
   display: flex;
   align-items: center;
   .bigArrow{
+    min-width: 310px;
     width: 410px;
     height: 200px;
     background-image: url("../images/content/bigarrow.png");
