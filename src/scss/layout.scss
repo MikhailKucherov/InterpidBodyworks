@@ -326,3 +326,153 @@ body{
     }
   }
 }
+
+//блок с отзывами
+
+.testimonials__container{
+  width: 100%;
+  height: 557px;
+  background-image: url("../images/content/Testimonials.svg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  .testimonials__headline{
+    font-family: IBM Plex Sans, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: normal;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+    margin-left: 7.8%;
+  }
+  .testimonials__feedback{
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    margin-bottom: 28px;
+    position:relative;
+    left:50%;
+    transform: translateX(-41%);
+    .feedback{
+      width:340px;
+      height: 224px;
+      max-height: 253px;
+      margin-right: 60px;
+      &:last-child{
+        margin-right:0px;
+      }
+      .nameFeedback{
+        font-family: IBM Plex Sans, sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 29px;
+        color: #FFFFFF;
+      }
+      .rFeedback{
+        margin: 15px 0;
+        display: flex;
+        .starFeedback{
+          width: 20px;
+          height: 20px;
+        }
+      }
+      .textFeedback{
+        font-family: IBM Plex Sans, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 29px;
+
+        color: #FFFFFF;
+      }
+    }
+  }
+  .allTestimonials{
+    display: flex;
+    .allTestimonials--text{
+      font-family: IBM Plex Sans, sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: normal;
+      color: #FFFFFF;
+      margin-left:7.8%;
+      margin-right: 17px;
+    }
+    .smallArrow{
+      width: 36px;
+      height: 20px;
+      background-image: url("../images/content/smallArrow.svg");
+      background-size: 100% 100%;
+    }
+  }
+}
+
+.textBlock__content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .textBlock{
+    &--headline{
+      font-family: IBM Plex Sans, sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 48px;
+      line-height: normal;
+      color: #240A25;
+    }
+    &--text{
+      font-family: IBM Plex Sans,sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 29px;
+
+      color: #240A25;
+    }
+    &--one{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      .textBlockWrap--one{
+        min-height: 564px;
+        width: 780px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    &--two{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      background-image: url("../images/content/background.svg");
+      .textBlockWrap--two{
+        min-height: 564px;
+        width: 780px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    &--three{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      .textBlockWrap--three{
+        min-height: 564px;
+        width: 780px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}

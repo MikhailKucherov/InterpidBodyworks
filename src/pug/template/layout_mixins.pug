@@ -111,6 +111,12 @@ mixin ratingStars()
         -for(var i=0; i<5; i++)
             img.star(src='./images/footer/Star.svg')
 
+//рэйтинг отзывов
+mixin ratingFeedback()
+    .rFeedback
+        -for(var i=0; i<5; i++)
+            img.starFeedback(src='../images/content/StarFeedback.svg')
+
 //миксин меню для футера
 mixin menu-footer(menu)
     .footer__menu
