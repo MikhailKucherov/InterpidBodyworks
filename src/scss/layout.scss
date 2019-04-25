@@ -476,3 +476,118 @@ body{
     }
   }
 }
+
+// what we do блок
+
+.whatWeDo__container{
+  width: 100%;
+  height: 806px;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-image: url("../images/content/whatwedoBackground.svg");
+  .whatWeDo__wrapper{
+    width: 1190px;
+    height: 682px;
+    max-height: 682px;
+    display: flex;
+    flex-direction: column;
+    position:relative;
+    .whatWeDo__headliner{
+      font-family: IBM Plex Sans,sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 56px;
+      line-height: normal;
+      color: #FFFFFF;
+      margin-bottom: 102px;
+    }
+    .whatWeDo__services{
+      display:flex;
+      flex-direction: column;
+      position:absolute;
+      z-index: 10;
+      left:580px;
+      top:71px;
+      &--text{
+        font-family: IBM Plex Sans, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: normal;
+        color: #FFFFFF;
+        margin-left: 20px;
+        margin-bottom: 38px;
+        &:nth-child(2),
+        &:last-child{
+          margin-bottom: 0;
+        }
+      }
+      &--triggerPoint{
+        font-family: IBM Plex Sans, sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: normal;
+        color: #FFFFFF;
+        position:relative;
+        margin-bottom: 40px;
+        margin-top: 39px;
+        &:before{
+          position:absolute;
+          content:'';
+          width: 30px;
+          height: 3px;
+          background-color:white;
+          top:50%;
+          left:-60px;
+        }
+      }
+    }
+    .whatWeDo__textAndImage{
+      height: 342px;
+      max-height: 342px;
+      width: 1190px;
+      margin-bottom: 137px;
+      .whatWeDo__imageContainer{
+        height: 270px;
+        width: 1190px;
+        background: url("../images/content/whatwedo.svg");
+        background-position: 100% 40%;
+      }
+      .whatWeDo__textContainer {
+        margin-top: 30px;
+        max-width: 380px;
+        max-height: 42px;
+        .whatWeDo__slogan {
+          font-family: IBM Plex Sans, sans-serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: normal;
+          color: #FFFFFF;
+        }
+      }
+    }
+    .whatWeDo__allServices{
+      display:flex;
+      align-items: center;
+      &--text{
+        font-family: IBM Plex Sans,sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: normal;
+        color: #FFFFFF;
+        margin-right: 6px;
+      }
+      .whatWeDo__smallArrow{
+        background-image: url("../images/content/smallArrow.svg");
+        background-size: 100% 100%;
+        width: 36px;
+        height: 20px;
+      }
+    }
+  }
+}
