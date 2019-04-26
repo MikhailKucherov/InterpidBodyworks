@@ -1,0 +1,18 @@
+extends template/layout
+block var
+    -
+        var page = 'price',
+        headerPageArray = [
+        breadCrumbs = 'Home / Who We Are',
+        headline = 'Intrepid Bodyworks Service Prices',
+        textInHeaderPage = 'Intrepid Karma offers local massage deals in Northglenn and the surrounding cities such as Westminster and Thornton.',
+        textBtn = 'Request a Free Consultation'
+        ];
+block content
+    +header-page(page, headerPageArray)
+    .violetBlock__wrapper
+        .wrapper--background
+        .center__wrapper
+            +violetBlock(page)
+    +whatWeDo()
+    +contactUsTodey()

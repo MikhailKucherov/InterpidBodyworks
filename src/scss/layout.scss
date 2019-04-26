@@ -194,7 +194,8 @@ body{
   &--price{
     width: 100%;
     height: 560px;
-    background-image:'../images/page-header/02_who_we_are.svg';
+    background-image: url('../images/page-header/price.png');
+    background-size: 100% 100%;
   }
   &--gift-certificates{
     width: 100%;
@@ -587,6 +588,219 @@ body{
         background-size: 100% 100%;
         width: 36px;
         height: 20px;
+      }
+    }
+  }
+}
+// фиолетовый блок (free consultation и gift certification)
+.violetBlock{
+  width: 980px;
+  height: 396px;
+  background: #7400A3 url("../images/content/cards.svg") no-repeat;
+  background-position: 94% 104%;
+  position:absolute;
+  box-sizing: border-box;
+  &--index{
+    width: 980px;
+    height: 396px;
+    background: #7400A3 url("../images/content/peaples.svg") no-repeat;
+    position:relative;
+    background-position: 94% 140%;
+    box-sizing: border-box;
+    .violetBlock--button-index{
+      width: 302px;
+      height: 40px;
+      background: #F6674D;
+      border-radius: 20px;
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      user-select: none;
+      cursor: pointer;
+      .violetBlock--button-text{
+        font-family: IBM Plex Sans, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 23px;
+        text-align: center;
+
+        color: #FFFFFF;
+      }
+    }
+  }
+  &__content{
+    width: 780px;
+    height: 236px;
+    position: relative;
+    padding-top: 20px;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    .violetBlock--headline{
+      font-family: IBM Plex Sans, sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 62px;
+
+      color: #FFFFFF;
+      position: relative;
+      margin-bottom: 20px;
+      &:before{
+        content: '';
+        width: 80px;
+        height: 4px;
+        background-color: white;
+        position:absolute;
+        top:-20px;
+      }
+    }
+    .violetBlock--text {
+      font-family: IBM Plex Sans, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 29px;
+      color: #FFFFFF;
+    }
+    .violetBlock--button{
+      width: 180px;
+      height: 40px;
+      background: #F6674D;
+      border-radius: 20px;
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      user-select: none;
+      cursor: pointer;
+    }
+  }
+  .violetBlock--button-text{
+    font-family: IBM Plex Sans, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+
+    color: #FFFFFF;
+  }
+}
+
+//wrapper для фиолетового блока на индексе
+.violetBlock__wrapper{
+  width: 100%;
+  height: 557px;
+  position: relative;
+  .wrapper--background{
+    background-image: url("../images/content/whatwedoBackground.svg");
+    background-position: 50% 50%;
+    height: 375px;
+    width: 100%;
+    position:absolute;
+  }
+  .center__wrapper{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+//текст в индексе
+.indexTextBlock__one{
+  height: 425px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &--headlines{
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    margin-right: 20px;
+    .indexTextBlock__one--headline{
+      font-family: IBM Plex Sans, sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 31px;
+      color: #4F1790;
+      margin-bottom: 30px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+  .indexTextBlock__one--textblock{
+    width: 780px;
+    .indexTextBlock__one--text{
+      font-family: IBM Plex Sans,sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 29px;
+
+      color: #240A25;
+    }
+  }
+}
+
+//about в индексе
+.about{
+  height: 425px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  background: url("../images/content/aboutVector.svg") no-repeat;
+  background-position: 50% -42%;
+  &__container{
+    width: 680px;
+    position: relative;
+    right:190px;
+    .about--headline{
+      font-family: IBM Plex Sans,sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 62px;
+
+      color: #240A25;
+      margin-bottom: 20px;
+    }
+    .about--text{
+      font-family: IBM Plex Sans,sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 29px;
+
+      color: #240A25;
+    }
+    .about__btn{
+      width: 160px;
+      height: 40px;
+      background: #4F1790;
+      border-radius: 20px;
+      user-select: none;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 38px;
+      &--text{
+        font-family: IBM Plex Sans,sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 23px;
+        text-align: center;
+
+        color: #FFFFFF;
       }
     }
   }
