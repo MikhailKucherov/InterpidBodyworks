@@ -720,7 +720,7 @@ body{
   &--headlines{
     display: flex;
     flex-direction: column;
-    min-width: 200px;
+    max-width: 200px;
     margin-right: 20px;
     .indexTextBlock__one--headline{
       font-family: IBM Plex Sans, sans-serif;
