@@ -10,9 +10,14 @@ block var
         ];
 block content
     +header-page(page, headerPageArray)
-    .violetBlock__wrapper
-        .wrapper--background
-        .center__wrapper
+    .pricePage
+        +Prices(specialPricing, packageDeals)
+        .pricePage__textBlock
+            p.pricePage__textBlock--text Each massage has 15 minutes built in after each session so that clients can get off the table slowly. We will also have time for a pre and post massage chat to find out your goals for a session and look at the results after eaLh session.
+            p.pricePage__textBlock--text All forms of payment auepted including credit and debit cards, checks,paypal, and cash‘ If your insurance accepts massage therapy as a service I am able to accept insurance at this time.
+    .violetBlock__wrapper-priceAndWhatWeDo
+        .center__wrapper-priceAndWhatWeDo
             +violetBlock(page)
+        .wrapper--background-priceAndWhatWeDo
     +whatWeDo()
     +contactUsTodey()

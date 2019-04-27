@@ -151,3 +151,37 @@ $menu_bg: rgba(1, 23, 45, 0.95);
 
   color: #FFFFFF;
 }
+%textService{
+  font-family: IBM Plex Sans,sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 29px;
+  color: #7400A3;
+}
+%textPrice{
+  font-family: IBM Plex Sans,sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 29px;
+  color: #7400A3;
+}
+%textTimeAndEconomy{
+  font-family: IBM Plex Sans,sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+
+  color: #888888;
+}
+%textHeadlineOnPricePage{
+  font-family: IBM Plex Sans,sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 62px;
+
+  color: #240A25;
+}

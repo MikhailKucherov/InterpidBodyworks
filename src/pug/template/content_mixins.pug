@@ -84,3 +84,25 @@ mixin violetBlock(page)
                 span.violetBlock--text Gift certificates are a great way to say thank you to someone. Give the gift of massage to co-workers, employees, or loved ones to help them relax or reduce chronic pain.
                 .violetBlock--button
                     span.violetBlock--button-text Learn More
+
+// блок с ценами
+mixin Prices(specialPricing, packageDeals)
+    .prices
+        h1.prices__headline Special Pricing
+        .prices__services
+            each item in specialPricing
+                .prices__services--el
+                        .prices__services--el-top
+                            span.service= item.service
+                            span.price= item.price
+                        .prices__services--el-bottom
+                            span.time= item.time
+        h1.prices__headline Package Deals
+        .prices__services
+            each item in packageDeals
+                .prices__services--el
+                    .prices__services--el-top
+                        span.service= item.service
+                        span.price= item.price
+                    .prices__services--el-bottom
+                        span.economy= item.economy
