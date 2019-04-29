@@ -1,3 +1,95 @@
-.index {
-  min-height: 300vh;
+//текст в индексе
+.indexTextBlock__one{
+  height: 425px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &--headlines{
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    margin-right: 20px;
+    .indexTextBlock__one--headline{
+      font-family: IBM Plex Sans, sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 31px;
+      color: #4F1790;
+      margin-bottom: 30px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+  .indexTextBlock__one--textblock{
+    width: 780px;
+    .indexTextBlock__one--text{
+      font-family: IBM Plex Sans,sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 29px;
+
+      color: #240A25;
+    }
+  }
+}
+
+//about в индексе
+.about{
+  height: 425px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  background: url("../images/content/aboutVector.svg") no-repeat;
+  background-position: 50% -42%;
+  &__container{
+    width: 680px;
+    position: relative;
+    right:190px;
+    .about--headline{
+      font-family: IBM Plex Sans,sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 62px;
+
+      color: #240A25;
+      margin-bottom: 20px;
+    }
+    .about--text{
+      font-family: IBM Plex Sans,sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 29px;
+
+      color: #240A25;
+    }
+    .about__btn{
+      width: 160px;
+      height: 40px;
+      background: #4F1790;
+      border-radius: 20px;
+      user-select: none;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 38px;
+      &--text{
+        font-family: IBM Plex Sans,sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 23px;
+        text-align: center;
+
+        color: #FFFFFF;
+      }
+    }
+  }
 }

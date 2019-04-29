@@ -189,7 +189,7 @@ body{
   &--what-we-do{
     width: 100%;
     height: 560px;
-    background-image:'../images/page-header/02_who_we_are.svg';
+    background-image:url('../images/page-header/wwd.png');
   }
   &--price{
     width: 100%;
@@ -215,7 +215,7 @@ body{
   &--craniosacral-massage{
     width: 100%;
     height: 560px;
-    background-image:'../images/page-header/02_who_we_are.svg';
+    background-image:url('../images/page-header/05_craniosacral_massage.svg');
   }
   &--testimonials{
     width: 100%;
@@ -411,73 +411,6 @@ body{
     }
   }
 }
-
-.textBlock__content{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  .textBlock{
-    &--headline{
-      font-family: IBM Plex Sans, sans-serif;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 48px;
-      line-height: normal;
-      color: #240A25;
-    }
-    &--text{
-      font-family: IBM Plex Sans,sans-serif;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 18px;
-      line-height: 29px;
-
-      color: #240A25;
-    }
-    &--one{
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      .textBlockWrap--one{
-        min-height: 564px;
-        width: 780px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-      }
-    }
-    &--two{
-      display: flex;
-      justify-content: center;
-      width: 100%;
-      background-image: url("../images/content/background.svg");
-      .textBlockWrap--two{
-        min-height: 564px;
-        width: 780px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-      }
-    }
-    &--three{
-      display: flex;
-      justify-content: center;
-      width: 100%;
-      .textBlockWrap--three{
-        min-height: 564px;
-        width: 780px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-      }
-    }
-  }
-}
-
 // what we do блок
 
 .whatWeDo__container{
@@ -729,165 +662,44 @@ body{
   }
 }
 
-//текст в индексе
-.indexTextBlock__one{
-  height: 425px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  &--headlines{
-    display: flex;
-    flex-direction: column;
-    max-width: 200px;
-    margin-right: 20px;
-    .indexTextBlock__one--headline{
-      font-family: IBM Plex Sans, sans-serif;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 24px;
-      line-height: 31px;
-      color: #4F1790;
-      margin-bottom: 30px;
-      &:last-child{
-        margin-bottom: 0;
-      }
-    }
-  }
-  .indexTextBlock__one--textblock{
-    width: 780px;
-    .indexTextBlock__one--text{
-      font-family: IBM Plex Sans,sans-serif;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 18px;
-      line-height: 29px;
-
-      color: #240A25;
-    }
-  }
-}
-
-//about в индексе
-.about{
-  height: 425px;
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
+//слайдер
+//TODO:сделать слайдер
+.slider{
+  width: 960px;
+  height: 476px;
   position: relative;
-  background: url("../images/content/aboutVector.svg") no-repeat;
-  background-position: 50% -42%;
-  &__container{
-    width: 680px;
-    position: relative;
-    right:190px;
-    .about--headline{
-      font-family: IBM Plex Sans,sans-serif;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 48px;
-      line-height: 62px;
-
-      color: #240A25;
-      margin-bottom: 20px;
-    }
-    .about--text{
-      font-family: IBM Plex Sans,sans-serif;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 18px;
-      line-height: 29px;
-
-      color: #240A25;
-    }
-    .about__btn{
-      width: 160px;
-      height: 40px;
-      background: #4F1790;
-      border-radius: 20px;
-      user-select: none;
-      cursor: pointer;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 38px;
-      &--text{
-        font-family: IBM Plex Sans,sans-serif;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 18px;
-        line-height: 23px;
-        text-align: center;
-
-        color: #FFFFFF;
-      }
-    }
-  }
-}
-
-// блок с ценами и текстом на странице price
-.pricePage{
-  width: 100%;
+  overflow: hidden;
   display:flex;
-  justify-content: center;
-  flex-direction: column;
   align-items: center;
-  .prices{
+  justify-content: space-between;
+  .slider__wrapper{
     width: 780px;
-    .prices__headline{
-      margin-top: 60px;
-      @extend %textHeadlineOnPricePage;
+    height: 476px;
+    display: flex;
+    transition: transform 0.6s ease;
+    overflow: hidden;
+    .slider__item {
+      width: 780px;
+      height: 440px;
     }
-    &__services{
-      display:flex;
-      flex-wrap: wrap;
-      width:calc(100%/12*12);
-      margin: 0 -30px 0 -30px;
-      .prices__services--el{
-        width: 50%;
-        padding:30px 30px 0 30px;
-        .prices__services--el-top {
-          display: flex;
-          justify-content: space-between;
-          .service {
-            @extend %textService;
-            margin-bottom: 5px;
-          }
-
-          .price {
-            @extend %textPrice;
-          }
-        }
-
-        .prices__services--el-bottom {
-          .time {
-            @extend %textTimeAndEconomy;
-          }
-
-          .economy {
-            @extend %textTimeAndEconomy;
-          }
-        }
-      }
-    }
-  }
-  &__textBlock{
-    margin-top: 63px;
-    width: 780px;
-    margin-bottom: 60px;
-    &--text{
+    .slider__text{
+      margin-top: 15px;
       font-family: IBM Plex Sans,sans-serif;
       font-style: normal;
       font-weight: normal;
-      font-size: 18px;
-      line-height: 29px;
+      font-size: 16px;
+      line-height: 21px;
 
-      color: #240A25;
-      margin-bottom: 10px;
-      &:last-child{
-        margin-bottom: 0;
-      }
+      color: #888888;
     }
   }
+  .slider__control{
+    cursor: pointer;
+  }
+  .slider__left{
+
+  }
+  .slider__right{
+
+  }
 }
-//TODO: разобраться с flexbox сеткой

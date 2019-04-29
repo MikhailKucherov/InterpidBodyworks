@@ -1,0 +1,13 @@
+extends template/layout
+block var
+    -
+        var page = 'index',
+        headerPageArray = [
+        breadCrumbs = '-',
+        headline = 'Corrective Massage Therapy Focusing' + 'on Chronic Pain Relief',
+        textInHeaderPage = 'Our expertise falls in line with therapeutic massage therapy, medical massage, sports massage therapy, chair massage for the sake of relaxation and a pain free life.',
+        textBtn = 'I want to relieve my pain'
+        ];
+block content
+    +header-page(page, headerPageArray)
+    +Slider()

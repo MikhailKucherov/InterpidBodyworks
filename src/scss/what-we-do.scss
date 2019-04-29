@@ -1,0 +1,23 @@
+.whatWeDo__textBlock{
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  &--wrapper{
+    max-width: 780px;
+    .whatWeDo__textBlock-text{
+      font-family: IBM Plex Sans,sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 29px;
+      color: #240A25;
+      &:first-child{
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+//текстовый блок на странице who we are
+.textBlock__content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .textBlock{
+    &--headline{
+      font-family: IBM Plex Sans, sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 48px;
+      line-height: normal;
+      color: #240A25;
+    }
+    &--text{
+      font-family: IBM Plex Sans,sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 29px;
+
+      color: #240A25;
+    }
+    &--one{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      .textBlockWrap--one{
+        min-height: 564px;
+        width: 780px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    &--two{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      background-image: url("../images/content/background.svg");
+      .textBlockWrap--two{
+        min-height: 564px;
+        width: 780px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    &--three{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      .textBlockWrap--three{
+        min-height: 564px;
+        width: 780px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}

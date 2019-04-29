@@ -1,0 +1,23 @@
+extends template/layout
+block var
+    -
+        var page = 'what-we-do',
+        headerPageArray = [
+        breadCrumbs = 'Home / What We Do',
+        headline = 'What We Do',
+        textInHeaderPage = 'We excel at a wide variety of different modalities and reliefs. If you do not see your issues listed here that does not mean we am not cabable of helping you.',
+        textBtn = 'Request a Free Consultation'
+        ];
+block content
+    +header-page(page, headerPageArray)
+    +whatWeDo()
+    .whatWeDo__textBlock
+        .whatWeDo__textBlock--wrapper
+            p.whatWeDo__textBlock-text We excel at a wide variety of different modalities and reliefs. If you do not see your issues listed here that does not mean we am not cabable of helping you. Give us a call and we can talk about it. If we am not 100% confident that we can help you, we have a list of other therapists that we can refer you too. Lets talk! We excel at a wide variety of different modalities and reliefs. If you do not see your issues listed here that does not mean we am not cabable of helping you. Give us a call and we can talk about it. If we am not 100% confident that we can help you, we have a list of other therapists that we can refer you too. Lets talk!
+            p.whatWeDo__textBlock-text We excel at a wide variety of different modalities and reliefs. If you do not see your issues listed here that does not mean we am not cabable of helping you. Give us a call and we can talk about it. If we am not 100% confident that we can help you, we have a list of other therapists that we can refer you too. Lets talk!
+    .violetBlock__wrapper-priceAndWhatWeDo
+        .center__wrapper-priceAndWhatWeDo
+            +violetBlock(page)
+        .wrapper--background-priceAndWhatWeDo
+    +testimonials()
+    +contactUsTodey()

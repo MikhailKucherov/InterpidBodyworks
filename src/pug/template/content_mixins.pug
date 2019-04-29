@@ -106,3 +106,21 @@ mixin Prices(specialPricing, packageDeals)
                         span.price= item.price
                     .prices__services--el-bottom
                         span.economy= item.economy
+
+// миксин слайдера
+
+mixin Slider
+    .slider
+        span.slider__control.slider__left <
+        .slider__wrapper
+            .slider__item
+                img(src='../images/content/Slider/1.jpg')
+                p.slider__text This allows your fin(1)
+            .slider__item
+                img(src='../images/content/Slider/1.jpg')
+                p.slider__text This allows your fin(2)
+            .slider__item
+                img(src='../images/content/Slider/1.jpg')
+                p.slider__text This allows your fin(3)
+        span.slider__control.slider__right >
+//TODO:сделать слайдер
