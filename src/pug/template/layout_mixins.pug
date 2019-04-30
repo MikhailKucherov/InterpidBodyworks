@@ -134,7 +134,7 @@ mixin menu-footer(menu)
         each item, key in menu
             if (menu.length - 1 !== key)
                 li(class= 'footer__menu--item')
-                    a(href= item.url)= item.title
+                    a(href= item.url + '.html')= item.title
             else
                 li(class= 'footer__menu--item')
-                    a(href= 'contact_us') Contact Us
+                    a(href= 'contact-us.html') Contact Us
