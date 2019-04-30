@@ -1,0 +1,14 @@
+extends template/layout
+block var
+    -
+        var page = 'faq',
+        headerPageArray = [
+        breadCrumbs = 'Home / FAQ',
+        headline = 'Massage Frequently Asked Questions',
+        textInHeaderPage = 'Here are a few frequently asked questions and answers about massage. So don’t fret and just relax that’s the whole point of getting a massage!',
+        textBtn = ''
+        ];
+block content
+    +header-page(page, headerPageArray)
+    +FAQ(FAQarray, FAQarray2)
+    +contactUsTodey()

@@ -1,0 +1,51 @@
+.gc__textBlock{
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  padding-top: 60px;
+  margin-bottom: 20px;
+  &-two{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    padding-top: 20px;
+    margin-bottom: 60px;
+    .gc__textBlock--wrap-two{
+      width: 780px;
+    }
+    .gc__textBlock--text-two{
+      font-family: IBM Plex Sans,sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 29px;
+
+      color: #240A25;
+      &:nth-child(1){
+        margin-bottom: 50px;
+      }
+    }
+    .gc__textBlock--headline{
+      font-family: IBM Plex Sans,sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 42px;
+
+      color: #240A25;
+      margin-bottom: 20px;
+    }
+  }
+  .gc__textBlock--wrap{
+    width: 780px;
+    .gc__textBlock--text{
+      font-family: IBM Plex Sans,sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 29px;
+
+      color: #240A25;
+    }
+  }
+}

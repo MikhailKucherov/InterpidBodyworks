@@ -5,55 +5,96 @@ body{
   overflow-x: hidden;
 }
 .header{
-    position: absolute;
-    top:0;
-    left:0;
-    display:flex;
+  position: absolute;
+  top:0;
+  left:0;
+  display:flex;
+  width: 100%;
+  height: 120px;
+  z-index: 5;
+  justify-content: center;
+  align-items: center;
+  &--contact{
     width: 100%;
     height: 120px;
-    z-index: 5;
+    background: #7400A3;
+    display: flex;
+    align-items: center;
+    position:relative;
+    &:after{
+      content:'';
+      position:absolute;
+      width: 100%;
+      height: 1px;
+      background: #FFFFFF;
+      opacity: 0.25;
+      bottom:0;
+      left:0;
+    }
+    .logo{
+      width: 120px;
+      height: 44px;
+      background-image: url(../images/header/logo.svg);
+      margin-left: 110px;
+    }
+    .header--adress{
+      width: 354px;
+      height: 53px;
+      margin-left: 80px;
+      .adress--text{
+        font-family: IBM Plex Sans,sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 23px;
+
+        color: #FFFFFF;
+        &:first-child{
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+  .logo{
+      min-width: 120px;
+      height: 44px;
+      margin-right: 70px;
+      background-image: url(../images/header/logo.svg);
+  }
+  &__menu{
+    display:flex;
+  }
+  &__menu-item{
+    white-space: nowrap;
+    display:block;
+    margin-right: 20px;
+    @extend %text_header_menu-item;
+    &:last-child{
+      font-weight: 600;
+      margin-right: 50px;
+      color: #F6674D;
+    }
+    &--active{
+      display: block;
+      @extend %text_header_menu-item--active;
+    }
+  }
+  .button{
+    min-width: 91px;
+    width:140px;
+    height:40px;
+    background: #F6674D;
+    border-radius: 20px;
+    display: flex;
     justify-content: center;
     align-items: center;
-    .logo{
-        min-width: 120px;
-        height: 44px;
-        margin-right: 70px;
-        background-image: url(../images/header/logo.svg);
+    cursor: pointer;
+    &__text{
+      user-select: none;
+      margin-top:-3px;
+      @extend %textButtonInHeader
     }
-    &__menu{
-        display:flex;
-    }
-    &__menu-item{
-      white-space: nowrap;
-      display:block;
-      margin-right: 20px;
-      @extend %text_header_menu-item;
-      &:last-child{
-        font-weight: 600;
-        margin-right: 50px;
-        color: #F6674D;
-      }
-      &--active{
-        display: block;
-        @extend %text_header_menu-item--active;
-      }
-    }
-    .button{
-        min-width: 91px;
-        width:140px;
-        height:40px;
-        background: #F6674D;
-        border-radius: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        &__text{
-          user-select: none;
-          margin-top:-3px;
-          @extend %textButtonInHeader
-        }
-    }
+  }
 }
 //скрытие мобильной версии
 .header--device{
@@ -200,17 +241,27 @@ body{
   &--gift-certificates{
     width: 100%;
     height: 560px;
-    background-image:'../images/page-header/02_who_we_are.svg';
+    background: #4F1790 url('../images/page-header/Vector_Gift_certificates.svg') no-repeat;
+    background-size: 78% 84%;
+    background-position: 140% 110%;
+    .btn {
+      width: 220px!important;
+      height: 40px;
+    }
   }
   &--faq{
     width: 100%;
     height: 560px;
-    background-image:'../images/page-header/02_who_we_are.svg';
+    background-image:url('../images/page-header/08_faq.svg');
   }
   &--careers{
     width: 100%;
     height: 560px;
-    background-image:'../images/page-header/02_who_we_are.svg';
+    background-image:url('../images/page-header/11_careers.svg');
+    .btn {
+      width: 180px!important;
+      height: 40px;
+    }
   }
   &--craniosacral-massage{
     width: 100%;
@@ -230,20 +281,20 @@ body{
     top:150px;
     .breadCrumbs{
       @extend %textBreadCrumbs;
-      margin-bottom: 20px;
       &--index{
         width: 40px;
         height: 4px;
         background-color: white;
-        margin-bottom: 32px;
       }
     }
     .headline{
       @extend %textHeadline;
       margin-bottom: 20px;
+      margin-top:20px;
       &--index{
         @extend %textHeadline;
-        margin-bottom: 32px;
+        margin-bottom: 30px;
+        margin-top: 30px;
       }
     }
     .textInHeaderPage{
@@ -320,6 +371,10 @@ body{
       justify-content: center;
       align-items: center;
       cursor: pointer;
+      &-careers{
+        width: 180px;
+        height: 40px;
+      }
       .contact__btn-text{
         user-select: none;
         @extend %contactBtnText;
@@ -362,7 +417,7 @@ body{
       max-height: 253px;
       margin-right: 60px;
       &:last-child{
-        margin-right:0px;
+        margin-right:0;
       }
       .nameFeedback{
         font-family: IBM Plex Sans, sans-serif;
@@ -663,6 +718,11 @@ body{
 }
 
 //слайдер
+.sld__wrap{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 //TODO:сделать слайдер
 .slider{
   width: 960px;

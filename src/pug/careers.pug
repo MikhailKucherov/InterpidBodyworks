@@ -1,0 +1,29 @@
+extends template/layout
+block var
+    -
+        var page = 'careers',
+        headerPageArray = [
+        breadCrumbs = 'Home / ',
+        headline = 'Massage Career Information',
+        textInHeaderPage = 'Our expertise falls in line with therapeutic massage therapy, medical massage, sports massage therapy, chair massage for the sake of relaxation and a pain free life.',
+        textBtn = 'Apply For Job'
+        ];
+block content
+    +header-page(page, headerPageArray)
+    .careers
+        .careers__wrap
+            p.careers__text Thank you for your interest in joining the Intrepid Bodyworks team! We are a group of diverse and dedicated professionals who embrace a family-like atmosphere. Everything we do is to further serve the profession and live up to our mission of defining and advancing the highest standards in the massage therapy and bodywork profession. We are always striving for excellence and take pride in what we do.
+            p.careers__text We are always looking for team players who are passionate about their skills, enjoy interacting with others, and strive for excellence. If this sounds like you, please contact us to request more information about massage therapy careers.
+            h2.careers__headline Massage Therapist
+            p.careers__text We are looking for talented massage therapists that are interested in growing and extending their skills and knowledge! Great compensation with commission structure, incentives and health, vision, dental and life insurance benefits!
+            h2.careers__headline Benefits We Offer:
+            ul.careers__array
+                li.careers__array--el Health Insurance
+                li.careers__array--el Paid Vacations
+                li.careers__array--el Guaranteed Pay
+                li.careers__array--el Employee Discounts on Products
+                li.careers__array--el Free Monthly Massages for Employees
+                li.careers__array--el Steady Income all year
+                li.careers__array--el Flexible Schedules
+                li.careers__array--el Professional and Safe Work Environment
+    +contactUsTodey()

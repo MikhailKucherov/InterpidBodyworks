@@ -1,0 +1,83 @@
+.FAQ {
+  width: 100%;
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 60px;
+  .FAQ__wrap {
+    width: 780px;
+    .FAQ__headline {
+      font-family: IBM Plex Sans,sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 42px;
+
+      color: #240A25;
+      margin-bottom: 20px;
+      &:nth-child(13),
+      &:nth-child(15){
+        font-family: IBM Plex Sans,sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 31px;
+
+        color: #240A25;
+      }
+    }
+
+    .FAQ__text {
+      position:relative;
+      font-family: IBM Plex Sans,sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 29px;
+
+      color: #240A25;
+      margin-bottom: 60px;
+      &:after{
+        content:'';
+        position: absolute;
+        width: 780px;
+        height: 1px;
+        background: #4F1790;
+        bottom:-30px;
+        left:0;
+      }
+      &:nth-child(12),
+      &:nth-child(14){
+        margin-bottom: 40px;
+        &:after{
+          display:none;
+        }
+      }
+      &:nth-child(16){
+        margin-bottom: 20px;
+        &:after{
+          display:none;
+        }
+      }
+    }
+    .text2{
+      &:last-child{
+        &:after{
+          display:none;
+        }
+      }
+    }
+    .headline2{
+      &:nth-child(1){
+        font-family: IBM Plex Sans,sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 31px;
+
+        color: #240A25;
+        margin-top: 40px;
+      }
+    }
+  }
+}
