@@ -146,15 +146,20 @@
     height: 528px;
     &__topBlock{
       height: 378px;
+      box-sizing:border-box;
       .topBlock__content{
         min-width: 290px;
         width: 100%;
         margin-left: 20px;
         margin-right: 20px;
+        box-sizing:border-box;
         &--navigation{
           display: flex;
           flex-wrap: wrap;
           margin-bottom: 25px;
+          .topBlock__content--navigation-socialIcons{
+            margin-top:-5px;
+          }
           .footer__menu{
             display: flex;
             flex-wrap: wrap;
@@ -164,6 +169,7 @@
             &--item{
               white-space: nowrap;
               width: calc(290px / 12 * 6);
+              margin-bottom: 5px;
             }
           }
         }
@@ -194,16 +200,13 @@
         flex-wrap: wrap;
         &--leftSide{
           .bottomBlock__text{
-            &:nth-child(0){
-              margin-bottom: 10px;
-            }
           }
           display:flex;
           flex-wrap: wrap;
           justify-content: flex-start;
           min-width: 290px;
           .rating{
-            margin-bottom:10px;
+            margin-bottom:20px;
             margin-left: 0;
           }
         }

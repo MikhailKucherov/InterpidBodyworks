@@ -1,0 +1,24 @@
+extends template/layout
+block var
+    -
+        var page = 'contact-us'
+block content
+    .contact__page
+        .contactUs
+            .contactUs__leftSide
+                .contactUs__leftSide--wrapper
+                    h1.contactUs__headline Contact Us
+                    p.contactUs__text We seek to create long-term relationships built on results. Tell us about your business goals and we will contact you.
+                    h2.contactUs__underHeadline What You Get
+                    ul.contactUs__array
+                        li.contactUs__array--el An email or phone call from one of our consultants.
+                        li.contactUs__array--el A cost estimate for your project.
+                        li.contactUs__array--el An in-person meeting
+            .contactUs__rightSide
+                form.contact__form(name='contactForm' autocomplete='off')
+                    input.cont--el(placeholder='Name' type='text' name='contactName')
+                    input.cont--el(placeholder='Phone' type='text' name='contactPhone')
+                    input.cont--el(placeholder='Email' type='email' name='contactEmail')
+                    textarea.cont--el(placeholder='Massage' name='contactMassage')
+                    button.cont__btn Send
+                    //todo:сделать валидацию формы

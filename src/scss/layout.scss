@@ -1,6 +1,9 @@
 @import 'breakpoint';
 @import 'mixins';
 @import "vars";
+*{
+  outline: none;
+}
 body{
   overflow-x: hidden;
 }

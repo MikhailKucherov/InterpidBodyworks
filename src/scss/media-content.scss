@@ -1,0 +1,57 @@
+//contact Us Todey
+@media (max-width:789px) {
+  .container__contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 372px;
+    .bigArrow{
+      display: none;
+    }
+    .contact__content{
+      width: 280px;
+      height: 252px;
+      .contact__headline{
+        font-family: IBM Plex Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 26px;
+        line-height: 34px;
+
+        color: #FFFFFF;
+      }
+      .contact__text{
+        font-family: IBM Plex Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 23px;
+
+        color: #FFFFFF;
+      }
+      .contact__phone{
+        font-family: IBM Plex Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 23px;
+
+        color: #FFFFFF;
+      }
+      .contact__btn.contact__btn-careers{
+        width: 220px;
+        .contact__btn-text{
+          font-family: IBM Plex Sans;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 15px;
+          line-height: 19px;
+          text-align: center;
+
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
+
+}
