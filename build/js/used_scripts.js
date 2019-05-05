@@ -10,3 +10,4 @@ document.getElementsByClassName('button--device')[0].onclick = function() {
         document.getElementsByClassName('header__menu--device')[0].classList.remove('header__menu--device-active');
     }
 };
+//TODO:сделать слайдер

@@ -210,7 +210,7 @@ body{
     }
   }
 }
-//верхний заголовок
+//верхний блок с картинкой у страниц
 .topSection{
   display: flex;
   justify-content: center;
@@ -223,12 +223,20 @@ body{
     background-color: #4F1790;
     background-image: url("../images/page-header/Vector.svg");
     background-size: cover;
+    @media (max-width:780px){
+      background-size: cover;
+      background-position: 32% 112%;
+    }
   }
   &--who-we-are{
     width: 100%;
     height: 560px;
     background-image: url('../images/page-header/Rectangle10.png');
     background-size: 100% 100%;
+    @media(max-width:1114px){
+      background-size: cover;
+      background-position: 35% 118%;
+    }
   }
   &--what-we-do{
     width: 100%;
@@ -276,6 +284,7 @@ body{
     height: 560px;
     background-image:'../images/page-header/02_who_we_are.svg';
   }
+//todo:сделать страницу с отзывами
 
   .contentContainer{
     max-height: 340px;
@@ -332,6 +341,9 @@ body{
     max-width: 980px;
     position: absolute;
     top:238px;
+  }
+  .bottomBlock-contacts{
+    display: none;
   }
 }
 // Contact Us Todey
@@ -739,11 +751,12 @@ body{
     width: 780px;
     height: 476px;
     display: flex;
-    transition: transform 0.6s ease;
-    overflow: hidden;
+    overflow:hidden;
     .slider__item {
       width: 780px;
       height: 440px;
+      &--active{
+      }
     }
     .slider__text{
       margin-top: 15px;

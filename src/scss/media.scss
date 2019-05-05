@@ -67,7 +67,7 @@
   //мобильное меню
   .header__menu--device{
     width: 210px;
-    height: 466px;
+    height: calc(100% - 51px);
     margin-top: 1px;
     display:block;
     position:absolute;
@@ -75,6 +75,9 @@
     background: #37076F;
     right:-300px;
     transition:all .5s ease-in;
+    @media (min-width: 771px){
+      height: calc(100% - 1px);
+    }
     .header__menu--containerElements{
       margin-left:20px;
       margin-top:30px;

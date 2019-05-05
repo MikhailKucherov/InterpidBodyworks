@@ -15,6 +15,13 @@ mixin header-page(page, headerPageArray)
                 a(href='#bottom')
                     .arrow
 
+        .bottomBlock-contacts
+            a(href='tel:3034572040').bottomBlock-contacts-leftBtn
+                    span.leftBtn--phone 303-457-2040
+            a(href='contact-us.html').bottomBlock-contacts-rightBtn
+                    span.rightBtn--contact Contact Us
+
+
 mixin testimonials
     .testimonials__container
         h1.testimonials__headline Testimonials
@@ -116,12 +123,11 @@ mixin Prices(specialPricing, packageDeals)
                         span.economy= item.economy
 
 // миксин слайдера
-
-mixin Slider
+mixin Slider()
     .slider
         span.slider__control.slider__left <
         .slider__wrapper
-            .slider__item
+            .slider__item.slider__item--active
                 img(src='../images/content/Slider/1.jpg')
                 p.slider__text This allows your fin(1)
             .slider__item

@@ -1,5 +1,25 @@
 //contact Us Todey
-@media (max-width:789px) {
+@media (max-width:790px) {
+  .container__contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 372px;
+    .bigArrow{
+      display: none;
+    }
+    .contact__content{
+      margin-left:10px;
+      max-width: 580px;
+      height: 252px;
+
+      .contact__btn.contact__btn-careers{
+        width: 220px;
+      }
+    }
+  }
+}
+@media (max-width:560px){
   .container__contact{
     display: flex;
     justify-content: center;
@@ -53,5 +73,145 @@
       }
     }
   }
+}
 
+//верхний блок на страницах
+@media(max-width:1114px) {
+  .topSection {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: 35% 118%;
+    .contentContainer{
+      max-width: 980px;
+      margin:0 20px;
+      top:120px;
+    }
+  }
+}
+@media(max-width:770px) {
+  .topSection {
+    width: 100%;
+    height: 100vh;
+    &--careers{
+      background-size: cover;
+      background-position: 19% 140%;
+    }
+    .bottomBlock-contacts{
+      width: 100%;
+      height: 50px;
+      display: flex;
+      position: absolute;
+      bottom:0;
+      .bottomBlock-contacts-leftBtn{
+        width: 50%;
+        position: relative;
+        left:0;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background: #37076F;
+        user-select: none;
+        cursor: pointer;
+        .leftBtn--phone{
+          font-family: IBM Plex Sans;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 18px;
+          line-height: 23px;
+
+          color: #F6674D;
+        }
+      }
+      .bottomBlock-contacts-rightBtn{
+        width: 50%;
+        position: relative;
+        right: 0;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background: #4299FF;
+        user-select: none;
+        cursor: pointer;
+        .rightBtn--contact{
+          font-family: IBM Plex Sans;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 18px;
+          line-height: 23px;
+
+          color: #FFFFFF;
+        }
+      }
+    }
+    .contentContainer{
+      max-width: 600px;
+      margin:0 20px;
+      .arrow{
+        display:none;
+      }
+      .headline{
+        font-family: IBM Plex Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 26px;
+        line-height: 34px;
+
+        color: #FFFFFF;
+        &--index {
+          font-family: IBM Plex Sans;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 26px;
+          line-height: 34px;
+
+          color: #FFFFFF;
+        }
+      }
+      .textInHeaderPage{
+        font-family: IBM Plex Sans;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
+
+        color: #FFFFFF;
+        &--index {
+          font-family: IBM Plex Sans;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 22px;
+
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
+}
+@media(max-width:430px) {
+  .topSection {
+    .contentContainer {
+      top:77px;
+      .breadCrumbs{
+        &--index{
+          display: none;
+        }
+        display: none;
+      }
+      .btn {
+        width: 215px;
+        height: 40px;
+        .textBtn{
+          font-family: IBM Plex Sans;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 15px;
+          line-height: 19px;
+
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
 }
